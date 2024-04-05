@@ -1,0 +1,69 @@
+#Session One
+#Read File
+
+read.csv(file = "E:/Youtube/R-Basics/data/Patient1.csv")
+
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+#Variable and value assignment
+weight <- 55
+weight
+
+2.2 * weight
+
+#weight in kg is now:
+weight <- 57
+
+weight_lb <- 2.2 * weight
+weight_lb
+
+#using parantheses for printing results
+(total_weight <- weight + weight_lb)
+
+
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~
+#assignment of tabular value to a variable
+
+data <- read.csv(file = "E:/Youtube/R-Basics/data/Patient1.csv")
+
+head(data)
+
+class(data)
+
+dim(data)
+
+#Indexing in dataframes
+
+data[1, 1]
+
+data[30, 20]
+
+data[20, 7]
+
+#Indexing mulriple rows and multiple columns
+
+data[c(1, 3, 5), c(10, 20)]
+
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+#lists
+1:5
+
+3:12
+
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+#Indexing by lists
+
+data[1:4, 1:10]
+
+data[5:10, 1:1:10]
+
+#All columns of a row
+data[5, ]
+
+#All rows from multiple columns
+
+data[ , 16:18]
+
+#All rows from column named "X7.3"
+data[, "X7.3"]
+data$X7.2
